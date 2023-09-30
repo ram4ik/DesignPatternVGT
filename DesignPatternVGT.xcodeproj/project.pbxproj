@@ -16,6 +16,14 @@
 		84B3D0E72AC7DFEC00C15726 /* PayPalPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0E62AC7DFEC00C15726 /* PayPalPayment.swift */; };
 		84B3D0E92AC7E07900C15726 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0E82AC7E07900C15726 /* ShoppingCart.swift */; };
 		84B3D0ED2AC7E1D700C15726 /* StrategyDesignPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0EC2AC7E1D700C15726 /* StrategyDesignPattern.swift */; };
+		84B3D0F32AC7F24100C15726 /* RentalCarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0F22AC7F24100C15726 /* RentalCarProtocol.swift */; };
+		84B3D0F72AC7F2AB00C15726 /* Compact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0F62AC7F2AB00C15726 /* Compact.swift */; };
+		84B3D0F92AC7F2F700C15726 /* Sports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0F82AC7F2F700C15726 /* Sports.swift */; };
+		84B3D0FB2AC7F32900C15726 /* SUV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0FA2AC7F32900C15726 /* SUV.swift */; };
+		84B3D0FD2AC7F35900C15726 /* Minivan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0FC2AC7F35900C15726 /* Minivan.swift */; };
+		84B3D0FF2AC7F4A400C15726 /* RentalCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0FE2AC7F4A400C15726 /* RentalCar.swift */; };
+		84B3D1012AC7F5CF00C15726 /* CarSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D1002AC7F5CF00C15726 /* CarSelector.swift */; };
+		84B3D1032AC7F8B700C15726 /* FactoryDesignPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D1022AC7F8B700C15726 /* FactoryDesignPattern.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +38,14 @@
 		84B3D0E62AC7DFEC00C15726 /* PayPalPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalPayment.swift; sourceTree = "<group>"; };
 		84B3D0E82AC7E07900C15726 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
 		84B3D0EC2AC7E1D700C15726 /* StrategyDesignPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyDesignPattern.swift; sourceTree = "<group>"; };
+		84B3D0F22AC7F24100C15726 /* RentalCarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalCarProtocol.swift; sourceTree = "<group>"; };
+		84B3D0F62AC7F2AB00C15726 /* Compact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compact.swift; sourceTree = "<group>"; };
+		84B3D0F82AC7F2F700C15726 /* Sports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sports.swift; sourceTree = "<group>"; };
+		84B3D0FA2AC7F32900C15726 /* SUV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUV.swift; sourceTree = "<group>"; };
+		84B3D0FC2AC7F35900C15726 /* Minivan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minivan.swift; sourceTree = "<group>"; };
+		84B3D0FE2AC7F4A400C15726 /* RentalCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalCar.swift; sourceTree = "<group>"; };
+		84B3D1002AC7F5CF00C15726 /* CarSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelector.swift; sourceTree = "<group>"; };
+		84B3D1022AC7F8B700C15726 /* FactoryDesignPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryDesignPattern.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,7 @@
 		84B3D0D12AC7DED400C15726 /* DesignPatternVGT */ = {
 			isa = PBXGroup;
 			children = (
+				84B3D0F12AC7F1D100C15726 /* FactoryDesignPattern */,
 				84B3D0E12AC7DEFE00C15726 /* StrategyDesignPattern */,
 				84B3D0D22AC7DED400C15726 /* DesignPatternVGTApp.swift */,
 				84B3D0D42AC7DED400C15726 /* ContentView.swift */,
@@ -114,6 +131,37 @@
 				84B3D0E82AC7E07900C15726 /* ShoppingCart.swift */,
 			);
 			path = Context;
+			sourceTree = "<group>";
+		};
+		84B3D0F12AC7F1D100C15726 /* FactoryDesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				84B3D0F52AC7F29500C15726 /* RentalCars */,
+				84B3D0F42AC7F27F00C15726 /* RentalCarProtocol */,
+				84B3D0FE2AC7F4A400C15726 /* RentalCar.swift */,
+				84B3D1002AC7F5CF00C15726 /* CarSelector.swift */,
+				84B3D1022AC7F8B700C15726 /* FactoryDesignPattern.swift */,
+			);
+			path = FactoryDesignPattern;
+			sourceTree = "<group>";
+		};
+		84B3D0F42AC7F27F00C15726 /* RentalCarProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				84B3D0F22AC7F24100C15726 /* RentalCarProtocol.swift */,
+			);
+			path = RentalCarProtocol;
+			sourceTree = "<group>";
+		};
+		84B3D0F52AC7F29500C15726 /* RentalCars */ = {
+			isa = PBXGroup;
+			children = (
+				84B3D0F62AC7F2AB00C15726 /* Compact.swift */,
+				84B3D0F82AC7F2F700C15726 /* Sports.swift */,
+				84B3D0FA2AC7F32900C15726 /* SUV.swift */,
+				84B3D0FC2AC7F35900C15726 /* Minivan.swift */,
+			);
+			path = RentalCars;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,11 +235,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B3D0E32AC7DF5600C15726 /* PaymentStrategy.swift in Sources */,
+				84B3D0F72AC7F2AB00C15726 /* Compact.swift in Sources */,
 				84B3D0E92AC7E07900C15726 /* ShoppingCart.swift in Sources */,
 				84B3D0E72AC7DFEC00C15726 /* PayPalPayment.swift in Sources */,
+				84B3D0FB2AC7F32900C15726 /* SUV.swift in Sources */,
+				84B3D1012AC7F5CF00C15726 /* CarSelector.swift in Sources */,
 				84B3D0E52AC7DF9800C15726 /* CreditCardPayment.swift in Sources */,
+				84B3D0FD2AC7F35900C15726 /* Minivan.swift in Sources */,
+				84B3D0FF2AC7F4A400C15726 /* RentalCar.swift in Sources */,
 				84B3D0ED2AC7E1D700C15726 /* StrategyDesignPattern.swift in Sources */,
+				84B3D0F92AC7F2F700C15726 /* Sports.swift in Sources */,
 				84B3D0D52AC7DED400C15726 /* ContentView.swift in Sources */,
+				84B3D0F32AC7F24100C15726 /* RentalCarProtocol.swift in Sources */,
+				84B3D1032AC7F8B700C15726 /* FactoryDesignPattern.swift in Sources */,
 				84B3D0D32AC7DED400C15726 /* DesignPatternVGTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,9 @@ struct ContentView: View {
             NavigationLink("Strategy Design Pattern") {
                 StrategyDesignPattern()
             }
+            NavigationLink("Factory Design Pattern") {
+                FactoryDesignPattern()
+            }
         }
     }
 }

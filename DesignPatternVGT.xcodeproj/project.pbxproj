@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		8440AA0C2AC9447100B4FAA8 /* SingletonDesignPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440AA0B2AC9447100B4FAA8 /* SingletonDesignPattern.swift */; };
 		8440AA0E2AC944AF00B4FAA8 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440AA0D2AC944AF00B4FAA8 /* AppLogger.swift */; };
+		8440AA112AC9769400B4FAA8 /* ObjectPoolDesignPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440AA102AC9769400B4FAA8 /* ObjectPoolDesignPattern.swift */; };
+		8440AA132AC976E500B4FAA8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440AA122AC976E500B4FAA8 /* Book.swift */; };
+		8440AA172AC9774B00B4FAA8 /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440AA162AC9774B00B4FAA8 /* Pool.swift */; };
+		8440AA1A2AC9796400B4FAA8 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440AA192AC9796400B4FAA8 /* Library.swift */; };
 		84B3D0D32AC7DED400C15726 /* DesignPatternVGTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0D22AC7DED400C15726 /* DesignPatternVGTApp.swift */; };
 		84B3D0D52AC7DED400C15726 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0D42AC7DED400C15726 /* ContentView.swift */; };
 		84B3D0D72AC7DEDA00C15726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B3D0D62AC7DEDA00C15726 /* Assets.xcassets */; };
@@ -31,6 +35,10 @@
 /* Begin PBXFileReference section */
 		8440AA0B2AC9447100B4FAA8 /* SingletonDesignPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonDesignPattern.swift; sourceTree = "<group>"; };
 		8440AA0D2AC944AF00B4FAA8 /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		8440AA102AC9769400B4FAA8 /* ObjectPoolDesignPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectPoolDesignPattern.swift; sourceTree = "<group>"; };
+		8440AA122AC976E500B4FAA8 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		8440AA162AC9774B00B4FAA8 /* Pool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pool.swift; sourceTree = "<group>"; };
+		8440AA192AC9796400B4FAA8 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		84B3D0CF2AC7DED400C15726 /* DesignPatternVGT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternVGT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B3D0D22AC7DED400C15726 /* DesignPatternVGTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternVGTApp.swift; sourceTree = "<group>"; };
 		84B3D0D42AC7DED400C15726 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +80,41 @@
 			path = SingletonDesignPattern;
 			sourceTree = "<group>";
 		};
+		8440AA0F2AC9767900B4FAA8 /* ObjectPoolDesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				8440AA182AC9795300B4FAA8 /* Library */,
+				8440AA152AC9774300B4FAA8 /* Pool */,
+				8440AA142AC9773800B4FAA8 /* Book */,
+				8440AA102AC9769400B4FAA8 /* ObjectPoolDesignPattern.swift */,
+			);
+			path = ObjectPoolDesignPattern;
+			sourceTree = "<group>";
+		};
+		8440AA142AC9773800B4FAA8 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				8440AA122AC976E500B4FAA8 /* Book.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		8440AA152AC9774300B4FAA8 /* Pool */ = {
+			isa = PBXGroup;
+			children = (
+				8440AA162AC9774B00B4FAA8 /* Pool.swift */,
+			);
+			path = Pool;
+			sourceTree = "<group>";
+		};
+		8440AA182AC9795300B4FAA8 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				8440AA192AC9796400B4FAA8 /* Library.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		84B3D0C62AC7DED400C15726 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +134,7 @@
 		84B3D0D12AC7DED400C15726 /* DesignPatternVGT */ = {
 			isa = PBXGroup;
 			children = (
+				8440AA0F2AC9767900B4FAA8 /* ObjectPoolDesignPattern */,
 				8440AA0A2AC9445700B4FAA8 /* SingletonDesignPattern */,
 				84B3D0F12AC7F1D100C15726 /* FactoryDesignPattern */,
 				84B3D0E12AC7DEFE00C15726 /* StrategyDesignPattern */,
@@ -256,15 +300,19 @@
 				84B3D0E72AC7DFEC00C15726 /* PayPalPayment.swift in Sources */,
 				84B3D0FB2AC7F32900C15726 /* SUV.swift in Sources */,
 				84B3D1012AC7F5CF00C15726 /* CarSelector.swift in Sources */,
+				8440AA1A2AC9796400B4FAA8 /* Library.swift in Sources */,
 				84B3D0E52AC7DF9800C15726 /* CreditCardPayment.swift in Sources */,
 				84B3D0FD2AC7F35900C15726 /* Minivan.swift in Sources */,
 				84B3D0FF2AC7F4A400C15726 /* RentalCar.swift in Sources */,
+				8440AA132AC976E500B4FAA8 /* Book.swift in Sources */,
 				84B3D0ED2AC7E1D700C15726 /* StrategyDesignPattern.swift in Sources */,
 				84B3D0F92AC7F2F700C15726 /* Sports.swift in Sources */,
 				84B3D0D52AC7DED400C15726 /* ContentView.swift in Sources */,
 				84B3D0F32AC7F24100C15726 /* RentalCarProtocol.swift in Sources */,
+				8440AA112AC9769400B4FAA8 /* ObjectPoolDesignPattern.swift in Sources */,
 				84B3D1032AC7F8B700C15726 /* FactoryDesignPattern.swift in Sources */,
 				84B3D0D32AC7DED400C15726 /* DesignPatternVGTApp.swift in Sources */,
+				8440AA172AC9774B00B4FAA8 /* Pool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

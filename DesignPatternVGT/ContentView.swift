@@ -19,6 +19,9 @@ struct ContentView: View {
             NavigationLink("Singleton Design Pattern") {
                 SingletonDesignPattern()
             }
+            NavigationLink("Object Pool Design Pattern") {
+                ObjectPoolDesignPattern()
+            }
         }
     }
 }

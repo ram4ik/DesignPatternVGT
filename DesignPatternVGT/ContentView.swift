@@ -16,6 +16,9 @@ struct ContentView: View {
             NavigationLink("Factory Design Pattern") {
                 FactoryDesignPattern()
             }
+            NavigationLink("Singleton Design Pattern") {
+                SingletonDesignPattern()
+            }
         }
     }
 }

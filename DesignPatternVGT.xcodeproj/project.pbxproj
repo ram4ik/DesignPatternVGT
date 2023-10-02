@@ -13,6 +13,12 @@
 		8440AA132AC976E500B4FAA8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440AA122AC976E500B4FAA8 /* Book.swift */; };
 		8440AA172AC9774B00B4FAA8 /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440AA162AC9774B00B4FAA8 /* Pool.swift */; };
 		8440AA1A2AC9796400B4FAA8 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440AA192AC9796400B4FAA8 /* Library.swift */; };
+		846B02B92ACB4B7B00876B6A /* CommandDesignPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02B82ACB4B7B00876B6A /* CommandDesignPattern.swift */; };
+		846B02BC2ACB4BD700876B6A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02BB2ACB4BD700876B6A /* Command.swift */; };
+		846B02BF2ACB4C1700876B6A /* PastaCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02BE2ACB4C1700876B6A /* PastaCommand.swift */; };
+		846B02C22ACB4C6800876B6A /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02C12ACB4C6800876B6A /* Chef.swift */; };
+		846B02C52ACB4CD600876B6A /* Waiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02C42ACB4CD600876B6A /* Waiter.swift */; };
+		846B02C72ACB4DDA00876B6A /* PizzaCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02C62ACB4DDA00876B6A /* PizzaCommand.swift */; };
 		84B3D0D32AC7DED400C15726 /* DesignPatternVGTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0D22AC7DED400C15726 /* DesignPatternVGTApp.swift */; };
 		84B3D0D52AC7DED400C15726 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0D42AC7DED400C15726 /* ContentView.swift */; };
 		84B3D0D72AC7DEDA00C15726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B3D0D62AC7DEDA00C15726 /* Assets.xcassets */; };
@@ -39,6 +45,12 @@
 		8440AA122AC976E500B4FAA8 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		8440AA162AC9774B00B4FAA8 /* Pool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pool.swift; sourceTree = "<group>"; };
 		8440AA192AC9796400B4FAA8 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		846B02B82ACB4B7B00876B6A /* CommandDesignPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDesignPattern.swift; sourceTree = "<group>"; };
+		846B02BB2ACB4BD700876B6A /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		846B02BE2ACB4C1700876B6A /* PastaCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastaCommand.swift; sourceTree = "<group>"; };
+		846B02C12ACB4C6800876B6A /* Chef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chef.swift; sourceTree = "<group>"; };
+		846B02C42ACB4CD600876B6A /* Waiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waiter.swift; sourceTree = "<group>"; };
+		846B02C62ACB4DDA00876B6A /* PizzaCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaCommand.swift; sourceTree = "<group>"; };
 		84B3D0CF2AC7DED400C15726 /* DesignPatternVGT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternVGT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B3D0D22AC7DED400C15726 /* DesignPatternVGTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternVGTApp.swift; sourceTree = "<group>"; };
 		84B3D0D42AC7DED400C15726 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +127,51 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
+		846B02B72ACB4B5900876B6A /* CommandDesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				846B02C32ACB4CC500876B6A /* Invoker */,
+				846B02C02ACB4C6000876B6A /* Receiver */,
+				846B02BD2ACB4C0600876B6A /* Commands */,
+				846B02BA2ACB4BB800876B6A /* CommandProtocol */,
+				846B02B82ACB4B7B00876B6A /* CommandDesignPattern.swift */,
+			);
+			path = CommandDesignPattern;
+			sourceTree = "<group>";
+		};
+		846B02BA2ACB4BB800876B6A /* CommandProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				846B02BB2ACB4BD700876B6A /* Command.swift */,
+			);
+			path = CommandProtocol;
+			sourceTree = "<group>";
+		};
+		846B02BD2ACB4C0600876B6A /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				846B02BE2ACB4C1700876B6A /* PastaCommand.swift */,
+				846B02C62ACB4DDA00876B6A /* PizzaCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		846B02C02ACB4C6000876B6A /* Receiver */ = {
+			isa = PBXGroup;
+			children = (
+				846B02C12ACB4C6800876B6A /* Chef.swift */,
+			);
+			path = Receiver;
+			sourceTree = "<group>";
+		};
+		846B02C32ACB4CC500876B6A /* Invoker */ = {
+			isa = PBXGroup;
+			children = (
+				846B02C42ACB4CD600876B6A /* Waiter.swift */,
+			);
+			path = Invoker;
+			sourceTree = "<group>";
+		};
 		84B3D0C62AC7DED400C15726 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +191,7 @@
 		84B3D0D12AC7DED400C15726 /* DesignPatternVGT */ = {
 			isa = PBXGroup;
 			children = (
+				846B02B72ACB4B5900876B6A /* CommandDesignPattern */,
 				8440AA0F2AC9767900B4FAA8 /* ObjectPoolDesignPattern */,
 				8440AA0A2AC9445700B4FAA8 /* SingletonDesignPattern */,
 				84B3D0F12AC7F1D100C15726 /* FactoryDesignPattern */,
@@ -295,6 +353,7 @@
 				84B3D0E32AC7DF5600C15726 /* PaymentStrategy.swift in Sources */,
 				8440AA0E2AC944AF00B4FAA8 /* AppLogger.swift in Sources */,
 				84B3D0F72AC7F2AB00C15726 /* Compact.swift in Sources */,
+				846B02C22ACB4C6800876B6A /* Chef.swift in Sources */,
 				8440AA0C2AC9447100B4FAA8 /* SingletonDesignPattern.swift in Sources */,
 				84B3D0E92AC7E07900C15726 /* ShoppingCart.swift in Sources */,
 				84B3D0E72AC7DFEC00C15726 /* PayPalPayment.swift in Sources */,
@@ -305,14 +364,19 @@
 				84B3D0FD2AC7F35900C15726 /* Minivan.swift in Sources */,
 				84B3D0FF2AC7F4A400C15726 /* RentalCar.swift in Sources */,
 				8440AA132AC976E500B4FAA8 /* Book.swift in Sources */,
+				846B02BF2ACB4C1700876B6A /* PastaCommand.swift in Sources */,
+				846B02C72ACB4DDA00876B6A /* PizzaCommand.swift in Sources */,
 				84B3D0ED2AC7E1D700C15726 /* StrategyDesignPattern.swift in Sources */,
 				84B3D0F92AC7F2F700C15726 /* Sports.swift in Sources */,
 				84B3D0D52AC7DED400C15726 /* ContentView.swift in Sources */,
 				84B3D0F32AC7F24100C15726 /* RentalCarProtocol.swift in Sources */,
 				8440AA112AC9769400B4FAA8 /* ObjectPoolDesignPattern.swift in Sources */,
+				846B02B92ACB4B7B00876B6A /* CommandDesignPattern.swift in Sources */,
+				846B02BC2ACB4BD700876B6A /* Command.swift in Sources */,
 				84B3D1032AC7F8B700C15726 /* FactoryDesignPattern.swift in Sources */,
 				84B3D0D32AC7DED400C15726 /* DesignPatternVGTApp.swift in Sources */,
 				8440AA172AC9774B00B4FAA8 /* Pool.swift in Sources */,
+				846B02C52ACB4CD600876B6A /* Waiter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

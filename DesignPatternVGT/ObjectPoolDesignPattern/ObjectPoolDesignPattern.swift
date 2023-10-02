@@ -11,7 +11,7 @@ struct ObjectPoolDesignPattern: View {
     var body: some View {
         Text("Object Pool Design Pattern")
             .onAppear() {
-                var book = Library.shared.checkoutBook(reader: "Ramill")
+                let book = Library.shared.checkoutBook(reader: "Ramill")
                 Library.shared.printReport()
                 
                 if let book = book {

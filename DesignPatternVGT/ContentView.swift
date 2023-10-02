@@ -22,6 +22,9 @@ struct ContentView: View {
             NavigationLink("Object Pool Design Pattern") {
                 ObjectPoolDesignPattern()
             }
+            NavigationLink("Command Design Pattern") {
+                CommandDesignPattern()
+            }
         }
     }
 }

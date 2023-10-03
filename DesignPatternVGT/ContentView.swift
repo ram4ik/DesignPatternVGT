@@ -25,6 +25,9 @@ struct ContentView: View {
             NavigationLink("Command Design Pattern") {
                 CommandDesignPattern()
             }
+            NavigationLink("Observer Design Pattern") {
+                ObserverDesignPattern()
+            }
         }
     }
 }

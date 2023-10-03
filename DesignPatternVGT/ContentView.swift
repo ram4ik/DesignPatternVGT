@@ -31,6 +31,9 @@ struct ContentView: View {
             NavigationLink("Iterator Design Pattern") {
                 IteratorDesignPattern()
             }
+            NavigationLink("Composite Design Pattern") {
+                CompositeDesignPattern()
+            }
         }
     }
 }

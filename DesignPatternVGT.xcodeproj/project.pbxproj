@@ -30,6 +30,10 @@
 		846B02E22ACC83FD00876B6A /* IteratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02E12ACC83FD00876B6A /* IteratorProtocol.swift */; };
 		846B02E52ACC84FD00876B6A /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02E42ACC84FD00876B6A /* Iterator.swift */; };
 		846B02E82ACC875000876B6A /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02E72ACC875000876B6A /* Playlist.swift */; };
+		846B02EB2ACC960D00876B6A /* CompositeDesignPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02EA2ACC960D00876B6A /* CompositeDesignPattern.swift */; };
+		846B02EE2ACC967500876B6A /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02ED2ACC967500876B6A /* Employee.swift */; };
+		846B02F02ACC96B300876B6A /* IndividualEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02EF2ACC96B300876B6A /* IndividualEmployee.swift */; };
+		846B02F32ACC971300876B6A /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02F22ACC971300876B6A /* Manager.swift */; };
 		84B3D0D32AC7DED400C15726 /* DesignPatternVGTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0D22AC7DED400C15726 /* DesignPatternVGTApp.swift */; };
 		84B3D0D52AC7DED400C15726 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0D42AC7DED400C15726 /* ContentView.swift */; };
 		84B3D0D72AC7DEDA00C15726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B3D0D62AC7DEDA00C15726 /* Assets.xcassets */; };
@@ -73,6 +77,10 @@
 		846B02E12ACC83FD00876B6A /* IteratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorProtocol.swift; sourceTree = "<group>"; };
 		846B02E42ACC84FD00876B6A /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
 		846B02E72ACC875000876B6A /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		846B02EA2ACC960D00876B6A /* CompositeDesignPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeDesignPattern.swift; sourceTree = "<group>"; };
+		846B02ED2ACC967500876B6A /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		846B02EF2ACC96B300876B6A /* IndividualEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualEmployee.swift; sourceTree = "<group>"; };
+		846B02F22ACC971300876B6A /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		84B3D0CF2AC7DED400C15726 /* DesignPatternVGT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternVGT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B3D0D22AC7DED400C15726 /* DesignPatternVGTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternVGTApp.swift; sourceTree = "<group>"; };
 		84B3D0D42AC7DED400C15726 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -291,6 +299,33 @@
 			path = Playlist;
 			sourceTree = "<group>";
 		};
+		846B02E92ACC95F500876B6A /* CompositeDesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				846B02F12ACC96F800876B6A /* Composite */,
+				846B02EC2ACC966100876B6A /* ComponentProtocol */,
+				846B02EA2ACC960D00876B6A /* CompositeDesignPattern.swift */,
+			);
+			path = CompositeDesignPattern;
+			sourceTree = "<group>";
+		};
+		846B02EC2ACC966100876B6A /* ComponentProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				846B02ED2ACC967500876B6A /* Employee.swift */,
+				846B02EF2ACC96B300876B6A /* IndividualEmployee.swift */,
+			);
+			path = ComponentProtocol;
+			sourceTree = "<group>";
+		};
+		846B02F12ACC96F800876B6A /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				846B02F22ACC971300876B6A /* Manager.swift */,
+			);
+			path = Composite;
+			sourceTree = "<group>";
+		};
 		84B3D0C62AC7DED400C15726 = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +345,7 @@
 		84B3D0D12AC7DED400C15726 /* DesignPatternVGT */ = {
 			isa = PBXGroup;
 			children = (
+				846B02E92ACC95F500876B6A /* CompositeDesignPattern */,
 				846B02D72ACC825200876B6A /* IteratorDesignPattern */,
 				846B02C82ACC784500876B6A /* ObserverDesignPattern */,
 				846B02B72ACB4B5900876B6A /* CommandDesignPattern */,
@@ -477,12 +513,14 @@
 				84B3D0F72AC7F2AB00C15726 /* Compact.swift in Sources */,
 				846B02E52ACC84FD00876B6A /* Iterator.swift in Sources */,
 				846B02CD2ACC78A400876B6A /* Subject.swift in Sources */,
+				846B02F02ACC96B300876B6A /* IndividualEmployee.swift in Sources */,
 				846B02C22ACB4C6800876B6A /* Chef.swift in Sources */,
 				8440AA0C2AC9447100B4FAA8 /* SingletonDesignPattern.swift in Sources */,
 				84B3D0E92AC7E07900C15726 /* ShoppingCart.swift in Sources */,
 				846B02CA2ACC787200876B6A /* ObserverDesignPattern.swift in Sources */,
 				84B3D0E72AC7DFEC00C15726 /* PayPalPayment.swift in Sources */,
 				84B3D0FB2AC7F32900C15726 /* SUV.swift in Sources */,
+				846B02EB2ACC960D00876B6A /* CompositeDesignPattern.swift in Sources */,
 				84B3D1012AC7F5CF00C15726 /* CarSelector.swift in Sources */,
 				8440AA1A2AC9796400B4FAA8 /* Library.swift in Sources */,
 				84B3D0E52AC7DF9800C15726 /* CreditCardPayment.swift in Sources */,
@@ -494,6 +532,7 @@
 				846B02D62ACC7B6C00876B6A /* StockPriceObserver.swift in Sources */,
 				846B02C72ACB4DDA00876B6A /* PizzaCommand.swift in Sources */,
 				84B3D0ED2AC7E1D700C15726 /* StrategyDesignPattern.swift in Sources */,
+				846B02F32ACC971300876B6A /* Manager.swift in Sources */,
 				846B02E82ACC875000876B6A /* Playlist.swift in Sources */,
 				84B3D0F92AC7F2F700C15726 /* Sports.swift in Sources */,
 				846B02D92ACC826900876B6A /* IteratorDesignPattern.swift in Sources */,
@@ -503,6 +542,7 @@
 				846B02D32ACC796200876B6A /* StockPriceSubject.swift in Sources */,
 				8440AA112AC9769400B4FAA8 /* ObjectPoolDesignPattern.swift in Sources */,
 				846B02B92ACB4B7B00876B6A /* CommandDesignPattern.swift in Sources */,
+				846B02EE2ACC967500876B6A /* Employee.swift in Sources */,
 				846B02BC2ACB4BD700876B6A /* Command.swift in Sources */,
 				84B3D1032AC7F8B700C15726 /* FactoryDesignPattern.swift in Sources */,
 				84B3D0D32AC7DED400C15726 /* DesignPatternVGTApp.swift in Sources */,

@@ -28,6 +28,9 @@ struct ContentView: View {
             NavigationLink("Observer Design Pattern") {
                 ObserverDesignPattern()
             }
+            NavigationLink("Iterator Design Pattern") {
+                IteratorDesignPattern()
+            }
         }
     }
 }

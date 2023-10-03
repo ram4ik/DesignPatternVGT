@@ -24,6 +24,12 @@
 		846B02D02ACC790700876B6A /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02CF2ACC790700876B6A /* Observer.swift */; };
 		846B02D32ACC796200876B6A /* StockPriceSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02D22ACC796200876B6A /* StockPriceSubject.swift */; };
 		846B02D62ACC7B6C00876B6A /* StockPriceObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02D52ACC7B6C00876B6A /* StockPriceObserver.swift */; };
+		846B02D92ACC826900876B6A /* IteratorDesignPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02D82ACC826900876B6A /* IteratorDesignPattern.swift */; };
+		846B02DC2ACC82B900876B6A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02DB2ACC82B900876B6A /* Song.swift */; };
+		846B02DF2ACC831C00876B6A /* Iterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02DE2ACC831C00876B6A /* Iterable.swift */; };
+		846B02E22ACC83FD00876B6A /* IteratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02E12ACC83FD00876B6A /* IteratorProtocol.swift */; };
+		846B02E52ACC84FD00876B6A /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02E42ACC84FD00876B6A /* Iterator.swift */; };
+		846B02E82ACC875000876B6A /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02E72ACC875000876B6A /* Playlist.swift */; };
 		84B3D0D32AC7DED400C15726 /* DesignPatternVGTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0D22AC7DED400C15726 /* DesignPatternVGTApp.swift */; };
 		84B3D0D52AC7DED400C15726 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0D42AC7DED400C15726 /* ContentView.swift */; };
 		84B3D0D72AC7DEDA00C15726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B3D0D62AC7DEDA00C15726 /* Assets.xcassets */; };
@@ -61,6 +67,12 @@
 		846B02CF2ACC790700876B6A /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		846B02D22ACC796200876B6A /* StockPriceSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPriceSubject.swift; sourceTree = "<group>"; };
 		846B02D52ACC7B6C00876B6A /* StockPriceObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPriceObserver.swift; sourceTree = "<group>"; };
+		846B02D82ACC826900876B6A /* IteratorDesignPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorDesignPattern.swift; sourceTree = "<group>"; };
+		846B02DB2ACC82B900876B6A /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		846B02DE2ACC831C00876B6A /* Iterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterable.swift; sourceTree = "<group>"; };
+		846B02E12ACC83FD00876B6A /* IteratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorProtocol.swift; sourceTree = "<group>"; };
+		846B02E42ACC84FD00876B6A /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
+		846B02E72ACC875000876B6A /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		84B3D0CF2AC7DED400C15726 /* DesignPatternVGT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternVGT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B3D0D22AC7DED400C15726 /* DesignPatternVGTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternVGTApp.swift; sourceTree = "<group>"; };
 		84B3D0D42AC7DED400C15726 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -226,6 +238,59 @@
 			path = ConcreteObserver;
 			sourceTree = "<group>";
 		};
+		846B02D72ACC825200876B6A /* IteratorDesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				846B02E62ACC873700876B6A /* Playlist */,
+				846B02E32ACC84DB00876B6A /* Iterator */,
+				846B02E02ACC83C400876B6A /* CustomIteratorProtocol */,
+				846B02DD2ACC830000876B6A /* CustomIterableProtocol */,
+				846B02DA2ACC82A900876B6A /* Song */,
+				846B02D82ACC826900876B6A /* IteratorDesignPattern.swift */,
+			);
+			path = IteratorDesignPattern;
+			sourceTree = "<group>";
+		};
+		846B02DA2ACC82A900876B6A /* Song */ = {
+			isa = PBXGroup;
+			children = (
+				846B02DB2ACC82B900876B6A /* Song.swift */,
+			);
+			path = Song;
+			sourceTree = "<group>";
+		};
+		846B02DD2ACC830000876B6A /* CustomIterableProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				846B02DE2ACC831C00876B6A /* Iterable.swift */,
+			);
+			path = CustomIterableProtocol;
+			sourceTree = "<group>";
+		};
+		846B02E02ACC83C400876B6A /* CustomIteratorProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				846B02E12ACC83FD00876B6A /* IteratorProtocol.swift */,
+			);
+			path = CustomIteratorProtocol;
+			sourceTree = "<group>";
+		};
+		846B02E32ACC84DB00876B6A /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				846B02E42ACC84FD00876B6A /* Iterator.swift */,
+			);
+			path = Iterator;
+			sourceTree = "<group>";
+		};
+		846B02E62ACC873700876B6A /* Playlist */ = {
+			isa = PBXGroup;
+			children = (
+				846B02E72ACC875000876B6A /* Playlist.swift */,
+			);
+			path = Playlist;
+			sourceTree = "<group>";
+		};
 		84B3D0C62AC7DED400C15726 = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +310,7 @@
 		84B3D0D12AC7DED400C15726 /* DesignPatternVGT */ = {
 			isa = PBXGroup;
 			children = (
+				846B02D72ACC825200876B6A /* IteratorDesignPattern */,
 				846B02C82ACC784500876B6A /* ObserverDesignPattern */,
 				846B02B72ACB4B5900876B6A /* CommandDesignPattern */,
 				8440AA0F2AC9767900B4FAA8 /* ObjectPoolDesignPattern */,
@@ -409,6 +475,7 @@
 				846B02D02ACC790700876B6A /* Observer.swift in Sources */,
 				8440AA0E2AC944AF00B4FAA8 /* AppLogger.swift in Sources */,
 				84B3D0F72AC7F2AB00C15726 /* Compact.swift in Sources */,
+				846B02E52ACC84FD00876B6A /* Iterator.swift in Sources */,
 				846B02CD2ACC78A400876B6A /* Subject.swift in Sources */,
 				846B02C22ACB4C6800876B6A /* Chef.swift in Sources */,
 				8440AA0C2AC9447100B4FAA8 /* SingletonDesignPattern.swift in Sources */,
@@ -419,6 +486,7 @@
 				84B3D1012AC7F5CF00C15726 /* CarSelector.swift in Sources */,
 				8440AA1A2AC9796400B4FAA8 /* Library.swift in Sources */,
 				84B3D0E52AC7DF9800C15726 /* CreditCardPayment.swift in Sources */,
+				846B02DC2ACC82B900876B6A /* Song.swift in Sources */,
 				84B3D0FD2AC7F35900C15726 /* Minivan.swift in Sources */,
 				84B3D0FF2AC7F4A400C15726 /* RentalCar.swift in Sources */,
 				8440AA132AC976E500B4FAA8 /* Book.swift in Sources */,
@@ -426,7 +494,10 @@
 				846B02D62ACC7B6C00876B6A /* StockPriceObserver.swift in Sources */,
 				846B02C72ACB4DDA00876B6A /* PizzaCommand.swift in Sources */,
 				84B3D0ED2AC7E1D700C15726 /* StrategyDesignPattern.swift in Sources */,
+				846B02E82ACC875000876B6A /* Playlist.swift in Sources */,
 				84B3D0F92AC7F2F700C15726 /* Sports.swift in Sources */,
+				846B02D92ACC826900876B6A /* IteratorDesignPattern.swift in Sources */,
+				846B02DF2ACC831C00876B6A /* Iterable.swift in Sources */,
 				84B3D0D52AC7DED400C15726 /* ContentView.swift in Sources */,
 				84B3D0F32AC7F24100C15726 /* RentalCarProtocol.swift in Sources */,
 				846B02D32ACC796200876B6A /* StockPriceSubject.swift in Sources */,
@@ -435,6 +506,7 @@
 				846B02BC2ACB4BD700876B6A /* Command.swift in Sources */,
 				84B3D1032AC7F8B700C15726 /* FactoryDesignPattern.swift in Sources */,
 				84B3D0D32AC7DED400C15726 /* DesignPatternVGTApp.swift in Sources */,
+				846B02E22ACC83FD00876B6A /* IteratorProtocol.swift in Sources */,
 				8440AA172AC9774B00B4FAA8 /* Pool.swift in Sources */,
 				846B02C52ACB4CD600876B6A /* Waiter.swift in Sources */,
 			);

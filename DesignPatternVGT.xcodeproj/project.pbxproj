@@ -34,6 +34,10 @@
 		846B02EE2ACC967500876B6A /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02ED2ACC967500876B6A /* Employee.swift */; };
 		846B02F02ACC96B300876B6A /* IndividualEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02EF2ACC96B300876B6A /* IndividualEmployee.swift */; };
 		846B02F32ACC971300876B6A /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02F22ACC971300876B6A /* Manager.swift */; };
+		846B02F62ACD2D3200876B6A /* CoordinatorDesignPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02F52ACD2D3200876B6A /* CoordinatorDesignPattern.swift */; };
+		846B02F92ACD2F2100876B6A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02F82ACD2F2100876B6A /* Coordinator.swift */; };
+		846B02FB2ACD2F4C00876B6A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02FA2ACD2F4C00876B6A /* DetailView.swift */; };
+		846B02FF2ACD2FC000876B6A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B02FE2ACD2FC000876B6A /* MainCoordinator.swift */; };
 		84B3D0D32AC7DED400C15726 /* DesignPatternVGTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0D22AC7DED400C15726 /* DesignPatternVGTApp.swift */; };
 		84B3D0D52AC7DED400C15726 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D0D42AC7DED400C15726 /* ContentView.swift */; };
 		84B3D0D72AC7DEDA00C15726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B3D0D62AC7DEDA00C15726 /* Assets.xcassets */; };
@@ -81,6 +85,10 @@
 		846B02ED2ACC967500876B6A /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		846B02EF2ACC96B300876B6A /* IndividualEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualEmployee.swift; sourceTree = "<group>"; };
 		846B02F22ACC971300876B6A /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		846B02F52ACD2D3200876B6A /* CoordinatorDesignPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorDesignPattern.swift; sourceTree = "<group>"; };
+		846B02F82ACD2F2100876B6A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		846B02FA2ACD2F4C00876B6A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		846B02FE2ACD2FC000876B6A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		84B3D0CF2AC7DED400C15726 /* DesignPatternVGT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternVGT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B3D0D22AC7DED400C15726 /* DesignPatternVGTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternVGTApp.swift; sourceTree = "<group>"; };
 		84B3D0D42AC7DED400C15726 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -326,6 +334,41 @@
 			path = Composite;
 			sourceTree = "<group>";
 		};
+		846B02F42ACD2D1B00876B6A /* CoordinatorDesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				846B02FD2ACD2FA700876B6A /* MainCoordinator */,
+				846B02FC2ACD2F5100876B6A /* DetailView */,
+				846B02F72ACD2F0C00876B6A /* CoordinatorProtocol */,
+				846B02F52ACD2D3200876B6A /* CoordinatorDesignPattern.swift */,
+			);
+			path = CoordinatorDesignPattern;
+			sourceTree = "<group>";
+		};
+		846B02F72ACD2F0C00876B6A /* CoordinatorProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				846B02F82ACD2F2100876B6A /* Coordinator.swift */,
+			);
+			path = CoordinatorProtocol;
+			sourceTree = "<group>";
+		};
+		846B02FC2ACD2F5100876B6A /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				846B02FA2ACD2F4C00876B6A /* DetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		846B02FD2ACD2FA700876B6A /* MainCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				846B02FE2ACD2FC000876B6A /* MainCoordinator.swift */,
+			);
+			path = MainCoordinator;
+			sourceTree = "<group>";
+		};
 		84B3D0C62AC7DED400C15726 = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +388,7 @@
 		84B3D0D12AC7DED400C15726 /* DesignPatternVGT */ = {
 			isa = PBXGroup;
 			children = (
+				846B02F42ACD2D1B00876B6A /* CoordinatorDesignPattern */,
 				846B02E92ACC95F500876B6A /* CompositeDesignPattern */,
 				846B02D72ACC825200876B6A /* IteratorDesignPattern */,
 				846B02C82ACC784500876B6A /* ObserverDesignPattern */,
@@ -535,7 +579,10 @@
 				846B02F32ACC971300876B6A /* Manager.swift in Sources */,
 				846B02E82ACC875000876B6A /* Playlist.swift in Sources */,
 				84B3D0F92AC7F2F700C15726 /* Sports.swift in Sources */,
+				846B02FB2ACD2F4C00876B6A /* DetailView.swift in Sources */,
+				846B02F92ACD2F2100876B6A /* Coordinator.swift in Sources */,
 				846B02D92ACC826900876B6A /* IteratorDesignPattern.swift in Sources */,
+				846B02FF2ACD2FC000876B6A /* MainCoordinator.swift in Sources */,
 				846B02DF2ACC831C00876B6A /* Iterable.swift in Sources */,
 				84B3D0D52AC7DED400C15726 /* ContentView.swift in Sources */,
 				84B3D0F32AC7F24100C15726 /* RentalCarProtocol.swift in Sources */,
@@ -546,6 +593,7 @@
 				846B02BC2ACB4BD700876B6A /* Command.swift in Sources */,
 				84B3D1032AC7F8B700C15726 /* FactoryDesignPattern.swift in Sources */,
 				84B3D0D32AC7DED400C15726 /* DesignPatternVGTApp.swift in Sources */,
+				846B02F62ACD2D3200876B6A /* CoordinatorDesignPattern.swift in Sources */,
 				846B02E22ACC83FD00876B6A /* IteratorProtocol.swift in Sources */,
 				8440AA172AC9774B00B4FAA8 /* Pool.swift in Sources */,
 				846B02C52ACB4CD600876B6A /* Waiter.swift in Sources */,

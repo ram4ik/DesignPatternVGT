@@ -34,6 +34,9 @@ struct ContentView: View {
             NavigationLink("Composite Design Pattern") {
                 CompositeDesignPattern()
             }
+            NavigationLink("Coordinator Design Pattern") {
+                CoordinatorDesignPattern()
+            }
         }
     }
 }
